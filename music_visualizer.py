@@ -14,15 +14,7 @@ video_section1 = cv2.VideoCapture("danceInTheLightsAni.mp4")
 video_section1_fps = video_section1.get(cv2.CAP_PROP_FPS)
     
 pygame.init()
-
-
-fonts.FONT_100 = pygame.font.Font(None, 74)
-fonts.FONT_101 = pygame.font.Font(None, 100)
-fonts.FONT_102 = pygame.font.Font(None, 150)
-fonts.FONT_103 = pygame.font.Font(None, 200)
-fonts.FONT_104 = pygame.font.Font(None, 250)
-fonts.FONT_105 = pygame.font.Font(None, 300)
-
+fonts.init()
 
 # Window
 WIDTH, HEIGHT = 1400, 1000
