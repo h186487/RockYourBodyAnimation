@@ -8,10 +8,22 @@ import fonts
 
 #font = pygame.font.Font(None, 100)
 
-def temp(screen, y_offset=0):
+def temp1(screen, y_offset=0):
     #font = pygame.font.Font(None, 74)
-    text = fonts.FONT_100.render("TEMP", True, (255, 255, 255))
-    rect = text.get_rect(center=(700, 500 + y_offset))
+    text = fonts.FONT_106.render("TEMP", True, (255, 255, 255))
+    rect = text.get_rect(center=(700, 200 + y_offset))
+    screen.blit(text, rect)
+
+def temp2(screen, y_offset=0):
+    #font = pygame.font.Font(None, 74)
+    text = fonts.FONT_108.render("TEMP", True, (255, 255, 255))
+    rect = text.get_rect(center=(700, 400 + y_offset))
+    screen.blit(text, rect)
+
+def temp3(screen, y_offset=0):
+    #font = pygame.font.Font(None, 74)
+    text = fonts.FONT_107.render("TEMP", True, (255, 255, 255))
+    rect = text.get_rect(center=(700, 800 + y_offset))
     screen.blit(text, rect)
 
 """seksjon 1"""
@@ -23,7 +35,7 @@ def i_wanna_rock_right_now(screen, y_offset=0):
 
 """seksjon 2"""
 def i_wanna(screen, y_offset=0):
-    text = fonts.FONT_100.render("I WANNA", True, (255, 182, 193))
+    text = fonts.FONT_107.render("I WANNA", True, (255, 182, 193))
     rect = text.get_rect(topleft=(100, 100 + y_offset))
     screen.blit(text, rect)
 
@@ -34,7 +46,7 @@ def i_wanna_rock_right_now2(screen, y_offset=0):
 
 """seksjon 3"""
 def i_wanna2(screen, y_offset=0):
-    text = fonts.FONT_100.render("I WANNA", True, (199, 21, 133))
+    text = fonts.FONT_107.render("I WANNA", True, (199, 21, 133))
     rect = text.get_rect(topleft=(100, 100 + y_offset))
     screen.blit(text, rect)
 
@@ -65,54 +77,53 @@ def now2(screen, elapsed_time, y_offset=0):
     screen.blit(text, rect)
 
 def rock_right_now1(screen, y_offset=0):
-    text = fonts.FONT_100.render("Rock Right Now", True, (102, 51, 153))
+    text = fonts.FONT_107.render("Rock Right Now", True, (102, 51, 153))
     rect = text.get_rect(center=(700, 800 + y_offset))
     screen.blit(text, rect)
 
 """seksjon 5"""
 def i(screen, y_offset=0):
-    text = fonts.FONT_100.render("I", True, (255, 140, 0))
+    text = fonts.FONT_106.render("I", True, (255, 140, 0))
     rect = text.get_rect(center=(700, 500 + y_offset))
     screen.blit(text, rect)    
 
 def wanna(screen, y_offset=0):
-    text = fonts.FONT_100.render("WANNA", True, (255, 165, 0))
+    text = fonts.FONT_107.render("WANNA", True, (255, 165, 0))
     rect = text.get_rect(center=(700, 500 + y_offset))
     screen.blit(text, rect) 
 
 def rock_right_now2(screen, y_offset=0):
-    text = fonts.FONT_100.render("ROCK RIGHT NOW", True, (255, 127, 80))
+    text = fonts.FONT_108.render("ROCK RIGHT NOW", True, (255, 127, 80))
     rect = text.get_rect(center=(700, 500 + y_offset))
     screen.blit(text, rect) 
 
 """seksjon 6/7"""
 
 def i_wanna1_1(screen, y_offset=0):
-    text = fonts.FONT_100.render("I WANNA", True, (240, 177, 41))
+    text = fonts.FONT_107.render("I WANNA", True, (240, 177, 41))
     rect = text.get_rect(center=(700, 500 + y_offset))
     screen.blit(text, rect)
 
 def i_wanna1_2(screen, y_offset=0):
-    text = fonts.FONT_100.render("I WANNA", True, (235, 235, 59))
+    text = fonts.FONT_107.render("I WANNA", True, (235, 235, 59))
     rect = text.get_rect(center=(700, 500 + y_offset))
     screen.blit(text, rect)
 
     #seksjon 7
 def rock(screen, y_offset=0):
-    text = fonts.FONT_100.render("ROCK", True, (255, 127, 80))
+    text = fonts.FONT_105.render("ROCK", True, (255, 127, 80))
     rect = text.get_rect(center=(700, 500 + y_offset))
     screen.blit(text, rect)
 
 
 """seksjon 8"""
 
-#rotate
 def right(screen, elapsed_time, y_offset=0):
     text, rect = effects.font_cycle(
         "right",
         elapsed_time,
         (186, 85, 211),
-        (700, 200)
+        (700, 300)
     )
     screen.blit(text, rect)
 
@@ -388,3 +399,104 @@ def and_(screen, y_offset=0):
     text = fonts.FONT_100.render("AND", True, (255, 20, 147))
     rect = text.get_rect(center=(700, 500 + y_offset))
     screen.blit(text, rect)
+
+def right2(screen, elapsed_time, y_offset=0):
+    text, rect = effects.font_cycle(
+        "right",
+        elapsed_time,
+        (186, 85, 211),
+        (700, 500)
+    )
+    screen.blit(text, rect)
+
+
+def rock14_1(screen, y_offset=0):   
+    text = fonts.FONT_101.render("ROCK", True, (255, 20, 147))
+    rect = text.get_rect(center=(200, 400 + y_offset))
+    screen.blit(text, rect)
+
+def that14_1(screen, y_offset=0):   
+    text = fonts.FONT_102.render("THAT", True, (255, 20, 147))
+    rect = text.get_rect(center=(200, 500 + y_offset))
+    screen.blit(text, rect)
+
+def body14_1(screen, y_offset=0):   
+    text = fonts.FONT_103.render("BODY", True, (255, 20, 147))
+    rect = text.get_rect(center=(200, 600 + y_offset))
+    screen.blit(text, rect)
+
+def cmon_cmon14_1(screen, y_offset=0):   
+    text = fonts.FONT_100.render("C'MON C'MON", True, (255, 20, 147))
+    rect = text.get_rect(center=(700, 500 + y_offset))
+    screen.blit(text, rect)
+
+def rock14_2(screen, y_offset=0):   
+    text = fonts.FONT_103.render("ROCK", True, (255, 20, 147))
+    rect = text.get_rect(center=(1200, 400 + y_offset))
+    screen.blit(text, rect)
+
+def that14_2(screen, y_offset=0):   
+    text = fonts.FONT_104.render("THAT", True, (255, 20, 147))
+    rect = text.get_rect(center=(1200, 500 + y_offset))
+    screen.blit(text, rect)
+
+def body14_2(screen, y_offset=0):   
+    text = fonts.FONT_105.render("BODY", True, (255, 20, 147))
+    rect = text.get_rect(center=(1200, 600 + y_offset))
+    screen.blit(text, rect)
+
+def rock_your_body(screen, y_offset=0):   
+    text = fonts.FONT_100.render("ROCK YOUR BODY", True, (255, 20, 147))
+    rect = text.get_rect(center=(700, 500 + y_offset))
+    screen.blit(text, rect)
+
+def rock14_3(screen, y_offset=0):   
+    text = fonts.FONT_102.render("ROCK", True, (255, 20, 147))
+    rect = text.get_rect(center=(200, 400 + y_offset))
+    screen.blit(text, rect)
+
+def that14_3(screen, y_offset=0):   
+    text = fonts.FONT_103.render("THAT", True, (255, 20, 147))
+    rect = text.get_rect(center=(1200, 400 + y_offset))
+    screen.blit(text, rect)
+
+def body14_3(screen, y_offset=0):   
+    text = fonts.FONT_104.render("BODY", True, (255, 20, 147))
+    rect = text.get_rect(center=(200, 600 + y_offset))
+    screen.blit(text, rect)
+
+def cmon_cmon14_3(screen, y_offset=0):   
+    text = fonts.FONT_100.render("C'MON C'MON", True, (255, 20, 147))
+    rect = text.get_rect(center=(1200, 600 + y_offset))
+    screen.blit(text, rect)
+
+def rock14_4(screen, elapsed_time, y_offset=0):   
+    text = fonts.FONT_103.render("ROCK", True, (255, 20, 147))
+    section_start = 52.883
+    x = 550 - ((elapsed_time - section_start) * 250)
+    rect = text.get_rect(center=(x, 500 + y_offset))
+    screen.blit(text, rect)
+
+def that14_4(screen, elapsed_time, y_offset=0):   
+    text = fonts.FONT_104.render("THAT", True, (255, 20, 147))
+    section_start = 53.352
+    x = 850 + ((elapsed_time - section_start) * 250)
+    rect = text.get_rect(center=(x, 500 + y_offset))
+    screen.blit(text, rect)
+
+def bo14_4(screen, elapsed_time, y_offset=0):   
+    text = fonts.FONT_105.render("BO", True, (255, 20, 147))
+    section_start = 53.831
+    x = 550 - ((elapsed_time - section_start) * 250)
+    rect = text.get_rect(center=(x, 500 + y_offset))
+    screen.blit(text, rect)
+
+def dy14_4(screen, elapsed_time, y_offset=0):   
+    text = fonts.FONT_105.render("DY", True, (255, 20, 147))
+    section_start = 54.315
+    x = 850 + ((elapsed_time - section_start) * 250)
+    rect = text.get_rect(center=(x, 500 + y_offset))
+    screen.blit(text, rect)
+ 
+
+
