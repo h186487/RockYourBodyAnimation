@@ -1,0 +1,16 @@
+Endringer:
+1. seksjon 8: "nowww" må raskere av skjermen, før "in the"(lights) begynner 34.135
+
+Gjort!
+2. seksjon 6 & 7: endre farge tekst på "i wanna", slik at det er visuelt "endret" tekst fra "i wanna"1 til "i wanna"2 
+
+3. seksjon 5: timing skjerpes inn: visuell latency
+
+4. seksjon 4: now1 go now2 matche bpm
+
+
+
+
+
+
+

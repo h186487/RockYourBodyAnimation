@@ -1,0 +1,6 @@
+FONT_100 = None
+FONT_101 = None
+FONT_102 = None
+FONT_103 = None
+FONT_104 = None
+FONT_105 = None
